@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'BITWA';
+    src: url(font/BITWA2___.TTF) format('truetype');
+}
+body{
+    background-image: url('imagem/imagem.gif');
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat:no-repeat ;
+    background-position: center;
+}
+
+h1{
+    margin-left: 25%;
+    margin-top: 1%;
+    font-family: 'BITWA';
+    text-align: center;
+    box-shadow: 2px 2px 3px rgb(6, 229, 233);
+    width: 700px;
+    border: 4px groove darkturquoise ;
+    background: rgba(148, 0, 211, 0.822);
+}
+
+legend{
+    text-align: center;
+    font-family: 'BITWA';
+    
+}
+
+form{
+    margin-left: 20%;
+    width: 800px;
+    margin-top: 1%;
+    border: 10px outset  #67f2e4e2;
+    background-image: linear-gradient( 45deg, #ed2995ef, #ce14e6ee, #31aed4ea, #04e763ec);
+    font-family: 'Creepster', cursive;
+   
+}
+#primeiro{
+    height: 300px;
+}
+fieldset{
+    height:300px;
+    margin-top: 1%;
+    border: 5px groove darkmagenta;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin: auto;
+}
+
+textarea{
+margin-top: 2%;
+display: flex;
+}
+
+input, label , select, textarea{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+#check > input{
+    margin-left: 3px;
+}
+#check{
+    margin-right: 3%;
+}
+.campo{
+    margin-top: 1%;
+}
+
+input,select,textarea{
+    border: 3px outset darkviolet;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px  darkturquoise;
+}
+label{
+    box-shadow: 2px 2px 5px darkturquoise;
+}
+input,select,option,textarea{
+    font-family: 'Creepster', cursive;
+}
+textarea{
+    margin-top: 1%;
+}
+
+.campo input:focus ,.campo select:focus, textarea:focus {
+    background: rgb(188, 108, 220);
+}
+
+button{
+    margin-left: 35%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 6px outset rgb(13, 178, 238);
+    box-shadow: 3px 3px 5px rgba(124, 7, 242, 0.912);
+    background: rgb(147, 25, 208);
+    font-family: 'Creepster', cursive;
+    font-size: 11pt;
+    text-shadow: 2px 2px 2px rgb(73, 70, 70);
+}
+
+button:hover{
+    background: rgb(238, 150, 213);
+}
+select:hover{
+    background: darkorchid;
+}

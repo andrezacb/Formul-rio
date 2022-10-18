@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Bem- vindo ao Cadastro</h1>
+  <form>
+      <fieldset id="primeiro">
+        <legend><strong>Dados Pessoais</strong></legend>
+          <div class="campo">
+              <label for="nome">Nome Completo</label> <br>
+              <input type="text" name="nome" id="nome" required> <br>
+              <label for="nascimento">Data de Nascimento</label> <br>
+              <input type="number" name="nasc" id="nasc" required> <br>
+              <label for="endereço">Endereco:</label> <br> <br>
+              <label for="rua">Rua</label> 
+              <input type="text" name="rua" id="rua">
+              <label for="numero">N°</label>
+              <input type="number" name="n" id="n"> <br>
+              <label for="cidade">Cidade</label> <br>
+              <input type="text" name="cidade" id="cidade">
+          </div>
+          <div class="campo">
+              <label for="estado">Estado</label>
+              <select id="estado">
+                  <option selected disabled value="">selecionar</option>
+                  <option value="SP">SP</option>
+                  <option value="RJ">RJ</option>
+                  <option value="MG">MG</option>
+                  <option value="BA">BA</option>
+              </select>
+          </div>
+      </fieldset>
+      <fieldset>
+          <legend><strong>Dados do Curso</strong></legend>
+          <div class="campo">
+              <label for="aplicação">De qual lado da aplicação voce desenvolve:</label>
+              <input type="radio" name="dev" id="dev" value="frontend"> Front-end
+              <input type="radio" name="dev" id="dev" value="backend"> Back-end
+              <input type="radio" name="dev" id="dev" value="fullstack">Fullstack
+          </div><br>
+          <div id="check">
+            <label for="tecnologia">Selecione as tecnologias que voce mais utiliza:</label>
+            <label for="HTML">HTML</label>
+            <input type="checkbox" name="tecnologia1" id="tecnologia1" value="HTML">
+
+            <label for="CSS">CSS</label>
+            <input type="checkbox" name="tecnologia2" id="tecnologia2" value="CSS">
+
+            <label for="Java">Java</label>
+            <input type="checkbox" name="tecnologia3" id="tecnologia3" value="Java">
+
+            <label for="JavaScript">JavaScript</label>
+            <input type="checkbox" name="tecnologia4" id="tecnologia4" value="JavaScript">
+            <label for="PHP">PHP</label>
+            <input type="checkbox" name="tecnologia5" id="tecnologia5" value="PHP">
+
+            <label for="Python">Python</label>
+            <input type="checkbox" name="tecnologia6" id="tecnologia6" value="Python">
+          
+            <label for="C#">C#</label>
+            <input type="checkbox" name="tecnologia7" id="tecnologia7" value="C#">
+        </div>
+          <br>
+          <label for="experiencia">Conte um pouco sobre o que voce espera do curso:</label>
+          <textarea name="experiencia" id="experiencia" rows="6" style="width: 26em;"></textarea>
+        </fieldset>
+          <div class="campo">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required>
+              <label for="">senha</label>
+              <input type="password" name="senha" id="senha" placeholder="****">
+          </div>
+          <button type="submit">CONCLUIDO</button>
+  </form>
+</body>
+</html>
